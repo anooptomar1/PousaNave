@@ -95,6 +95,13 @@ class ViewController: UIViewController, SCNSceneRendererDelegate {
     
     func layoutScene() {
         
+        
+        let chuva = SCNParticleSystem(named: "Chuva.scnp", inDirectory: "Assets.scnassets")
+        let chuvaNode = SCNNode()
+        chuvaNode.addParticleSystem(chuva?.copy() as! SCNParticleSystem)
+        chuvaNode.position = SCNVector3(0, 20, 0)
+        scene.rootNode.addChildNode(chuvaNode)
+        
         let naveScene = SCNScene(named: "Assets.scnassets/Nave.scn")!
         naveNode = naveScene.rootNode.childNodes.first! as SCNNode
         scene.rootNode.addChildNode(naveNode)

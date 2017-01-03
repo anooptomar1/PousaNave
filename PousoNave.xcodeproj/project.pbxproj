@@ -310,6 +310,7 @@
 				AE7979C91DFDAF6600BEB5AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
